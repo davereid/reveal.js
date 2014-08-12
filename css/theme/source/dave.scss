@@ -1,0 +1,70 @@
+/**
+/**
+ * Dave Reid's theme for reveal.js.
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+$backgroundColor: #2D2D2D;
+$mainFont: 'Open Sans', sans-serif;
+$mainColor: #F0F0F0;
+$linkColor: #2874A2;
+$headingFont: 'Roboto Condensed', Impact, sans-serif;
+$headingTextShadow: none;
+
+// Include theme-specific fonts
+/*@font-face {
+	font-family: 'League Gothic';
+	src: url('../../lib/font/league_gothic-webfont.eot');
+	src: url('../../lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/league_gothic-webfont.woff') format('woff'),
+		 url('../../lib/font/league_gothic-webfont.ttf') format('truetype'),
+		 url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic|Roboto+Condensed:400,700|Roboto);
+
+// Override theme settings (see ../template/settings.scss)
+/*$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);*/
+
+// Background generator
+@mixin bodyBackground() {
+	/*@include radial-gradient( rgba(28,30,32,1), rgba(85,90,95,1) );*/
+}
+
+
+/*@media all and (min-width: 0px) {
+  .reveal {
+    background-image: url("../../images/event_footer_300.png");
+  }
+}
+
+@media all and (min-width: 1100px) {
+  .reveal {
+    background-image: url("../../images/event_footer_400.png");
+  }
+}*/
+
+.reveal .controls {
+  background: url("../../images/lullabot-robot-80.png") no-repeat center;
+  width: 110px;
+}
+
+.reveal ul li {
+  margin-bottom: .5em;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
